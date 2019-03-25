@@ -1,9 +1,17 @@
 # docker_nodes
 
 ### running bitcoind
+Configuration file `bitcoin.conf` should be placed in the data directory before spinning up the container.
 ```
 docker run --rm -d -p 8332:8332 -p 8333:8333 -v <LOCAL_DATA_DIR_PATH>:/home/bitcoin/.bitcoin --name bitcoind nandubatchu/bitcoind:0.17.1
 ```
+
+### running litecoind
+Configuration file `litecoin.conf` should be placed in the data directory before spinning up the container
+```
+docker run --rm -d -p 9332:9332 -p 9333:9333 -v <LOCAL_DATA_DIR_PATH>:/home/litecoin/.litecoin --name litecoind nandubatchu/litecoind:0.16.3
+```
+
 
 ### running parity
 Need to create a `config.toml` inside the data directory before spinning up the container. Would require to allow RPC to communicate with the node. (Reference: https://paritytech.github.io/parity-config-generator/)
