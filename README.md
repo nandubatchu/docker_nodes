@@ -19,3 +19,9 @@ Need to create a `config.toml` inside the data directory before spinning up the 
 ```
 docker run --rm -d -p 8545:8545 -p 30303:30303 -v <LOCAL_DATA_DIR_PATH>:/home/ethereum/parity_data --name parity nandubatchu/parity-ethereum:latest
 ```
+
+### running monero-wallet-rpc
+Need to create a `monero-wallet-cli.conf` inside the data directory before spinning up the container.
+```
+docker run --rm -it -p 18081:18081 -p 18088:18088 -v <LOCAL_DATA_DIR_PATH>:/home/monero/.bitmonero --name monero-waller-rpc nandubatchu/monero-wallet-rpc:0.14.0.2
+```
