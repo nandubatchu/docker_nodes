@@ -24,5 +24,5 @@ docker run --rm -d -p 8545:8545 -p 30303:30303 -v <LOCAL_DATA_DIR_PATH>:/home/et
 Need to create a `monero-wallet-cli.conf` inside the data directory before spinning up the container.
 Also would need to generate the wallet files using the `monero-wallet-cli` and be placed in the `/wallet-dir` path under the data directory to be accessed by the RPC commands.
 ```
-docker run --rm -it -p 18081:18081 -p 18088:18088 -v <LOCAL_DATA_DIR_PATH>:/home/monero/.bitmonero --name monero-waller-rpc nandubatchu/monero-wallet-rpc:0.14.0.2
+docker run --rm -d -p 18081:18081 -p 18088:18088 -v <LOCAL_DATA_DIR_PATH>:/home/monero/.bitmonero --name monero-waller-rpc nandubatchu/monero-wallet-rpc:0.14.0.2
 ```
