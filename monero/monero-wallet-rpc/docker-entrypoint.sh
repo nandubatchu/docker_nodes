@@ -14,7 +14,7 @@ if [ $(echo "$1" | cut -c1) = "-" ] || [ "$1" = "monero-wallet-rpc" ]; then
 
   echo "$0: setting data directory to $MONERO_DATA"
 
-  set -- "$@" --config-file="$MONERO_DATA/monero-wallet-cli.conf" --wallet-dir="$MONERO_DATA/wallet-dir"
+  set -- "$@" --config-file="$MONERO_DATA/monero-wallet-cli.conf" --wallet-dir="$MONERO_DATA/wallet-dir" --log-file="$MONERO_DATA/debug.log"
 fi
 
 echo
