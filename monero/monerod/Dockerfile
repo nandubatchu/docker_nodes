@@ -18,7 +18,7 @@ ENV PATH=/opt/monero-v${MONERO_VERSION}:$PATH
 # Mount volume
 VOLUME ["/home/monero/.bitmonero"]
 # Expose required ports (both testnet & mainnet)
-EXPOSE 18081 28081
+EXPOSE 18080 18081 28080 28081
 # Copy and define the entrypoint
 COPY docker-entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["sh", "/entrypoint.sh"]
