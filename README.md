@@ -30,5 +30,5 @@ docker run --rm -d -p 18088:18088 -v <LOCAL_DATA_DIR_PATH>:/home/monero/.bitmone
 ### running monerod
 Need to create a `monerod.conf` inside the data directory before spinning up the container.
 ```
-docker run --rm -d -p 18081:18081 -v <LOCAL_DATA_DIR_PATH>:/home/monero/.bitmonero --name monerod nandubatchu/monerod:0.14.0.2
+docker run --rm -d -p 18080:18080 -p 18081:18081 -v <LOCAL_DATA_DIR_PATH>:/home/monero/.bitmonero --name monerod nandubatchu/monerod:0.14.0.2
 ```
