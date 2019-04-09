@@ -14,7 +14,7 @@ if [ $(echo "$1" | cut -c1) = "-" ] || [ "$1" = "monerod" ]; then
 
   echo "$0: setting data directory to $MONERO_DATA"
 
-  set -- "$@" --config-file="$MONERO_DATA/monerod.conf" --data-dir="$MONERO_DATA"
+  set -- "$@" --config-file="$MONERO_DATA/monerod.conf" --data-dir="$MONERO_DATA" --non-interactive
 fi
 
 echo
