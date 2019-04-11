@@ -32,3 +32,9 @@ Need to create a `monerod.conf` inside the data directory before spinning up the
 ```
 docker run --rm -d -p 18080:18080 -p 18081:18081 -v <LOCAL_DATA_DIR_PATH>:/home/monero/.bitmonero --name monerod nandubatchu/monerod:0.14.0.2
 ```
+
+### running dogecoind
+Configuration file `dogecoin.conf` should be placed in the data directory before spinning up the container
+```
+docker run --rm -d -p 22555:22555 -v <LOCAL_DATA_DIR_PATH>:/home/dogecoin/.dogecoin --name dogecoind nandubatchu/dogecoind:1.10.0
+```
