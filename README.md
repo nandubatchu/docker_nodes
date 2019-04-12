@@ -12,6 +12,12 @@ Configuration file `bitcoin.conf` should be placed in the data directory before 
 docker run --rm -d -p 8332:8332 -p 8333:8333 -v <LOCAL_DATA_DIR_PATH>:/home/bitcoinabc/.bitcoinabc --name bitcoinabc nandubatchu/bitcoinabc:0.19.3
 ```
 
+### running bitcoind (bitcoin_sv)
+Configuration file `bitcoin.conf` should be placed in the data directory before spinning up the container.
+```
+docker run --rm -d -p 8332:8332 -p 8333:8333 -v <LOCAL_DATA_DIR_PATH>:/home/bitcoinsv/.bitcoinsv --name bitcoinsv nandubatchu/bitcoinsv:0.1.1
+```
+
 ### running litecoind
 Configuration file `litecoin.conf` should be placed in the data directory before spinning up the container
 ```
