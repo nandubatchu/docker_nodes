@@ -42,5 +42,5 @@ docker run --rm -d -p 22555:22555 -v <LOCAL_DATA_DIR_PATH>:/home/dogecoin/.dogec
 ### running zcashd
 Configuration file `zcash.conf` should be placed in the data directory before spinning up the container
 ```
-docker run --rm -d -p 8232:8232 -v <LOCAL_DATA_DIR_PATH>:/home/zcash/.zcash --name zcashd nandubatchu/zcashd:2.0.4
+docker run --rm -d -p 8232:8232 -p 8233:8233 -v <LOCAL_DATA_DIR_PATH>:/home/zcash/.zcash --name zcashd nandubatchu/zcashd:2.0.4
 ```
