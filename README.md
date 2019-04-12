@@ -36,5 +36,5 @@ docker run --rm -d -p 18080:18080 -p 18081:18081 -v <LOCAL_DATA_DIR_PATH>:/home/
 ### running dogecoind
 Configuration file `dogecoin.conf` should be placed in the data directory before spinning up the container
 ```
-docker run --rm -d -p 22555:22555 -v <LOCAL_DATA_DIR_PATH>:/home/dogecoin/.dogecoin --name dogecoind nandubatchu/dogecoind:1.10.0
+docker run --rm -d -p 22555:22555 -p 22556:22556 -v <LOCAL_DATA_DIR_PATH>:/home/dogecoin/.dogecoin --name dogecoind nandubatchu/dogecoind:1.10.0
 ```
