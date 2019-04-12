@@ -38,3 +38,15 @@ Configuration file `dogecoin.conf` should be placed in the data directory before
 ```
 docker run --rm -d -p 22555:22555 -p 22556:22556 -v <LOCAL_DATA_DIR_PATH>:/home/dogecoin/.dogecoin --name dogecoind nandubatchu/dogecoind:1.10.0
 ```
+
+### running zcashd
+Configuration file `zcash.conf` should be placed in the data directory before spinning up the container
+```
+docker run --rm -d -p 8232:8232 -v <LOCAL_DATA_DIR_PATH>:/home/zcash/.zcash --name zcashd nandubatchu/zcashd:2.0.4
+```
+
+### running qtumd
+Configuration file `qtum.conf` should be placed in the data directory before spinning up the container
+```
+docker run --rm -d -p 3888:3888 -p 3889:3889 -v <LOCAL_DATA_DIR_PATH>:/home/qtum/.qtum --name qtumd nandubatchu/qtumd:0.17.2
+```
