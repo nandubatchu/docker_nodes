@@ -67,3 +67,9 @@ Configuration file `dcrd.conf` should be placed in the data directory before spi
 ```
 docker run --rm -d -p 9108:9108 -p 9109:9109 -v <LOCAL_DATA_DIR_PATH>:/root/.dcrd --name dcrd nandubatchu/dcrd:1.4.0
 ```
+
+### running dashd
+Configuration file `dash.conf` should be placed in the data directory before spinning up the container
+```
+docker run --rm -d -p 9998:9998 -p 9999:9999 -v <LOCAL_DATA_DIR_PATH>:/home/dashcore/.dashcore --name dashd nandubatchu/dashd:0.13.3.0
+```
