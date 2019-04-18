@@ -7,6 +7,7 @@ RUN  apt-get update \
   && rm -rf /var/lib/apt/lists/*
 # Declare the environment variables (version, path, data-dir etc)
 ENV DASHCORE_VERSION=0.13.3.0
+ENV DASHCORE_BINARIES=0.13.3
 ENV DASHCORE_DATA=/home/dashcore/.dashcore
 # Get the compiled binaries and extract them
 RUN wget https://github.com/dashpay/dash/releases/download/v${DASHCORE_VERSION}/dashcore-${DASHCORE_VERSION}-x86_64-linux-gnu.tar.gz
@@ -14,7 +15,7 @@ RUN tar -xzf *.tar.gz -C /opt
 # Cleanup the workspace
 RUN rm *.tar.gz
 # Append the bin folder to the %PATH%
-ENV PATH=/opt/dashcore-${DASHCORE_VERSION}/bin:$PATH
+ENV PATH=/opt/dashcore-${DASHCORE_BINARIES}/bin:$PATH
 # Mount volume
 VOLUME ["/home/dashcore/.dashcore"]
 # Expose required ports (both testnet & mainnet)
