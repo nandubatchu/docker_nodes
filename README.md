@@ -61,3 +61,9 @@ Configuration file `qtum.conf` should be placed in the data directory before spi
 ```
 docker run --rm -d -p 3888:3888 -p 3889:3889 -v <LOCAL_DATA_DIR_PATH>:/home/qtum/.qtum --name qtumd nandubatchu/qtumd:0.17.2
 ```
+
+### running dcrd
+Configuration file `dcrd.conf` should be placed in the data directory before spinning up the container
+```
+docker run --rm -d -p 9108:9108 -p 9109:9109 -v <LOCAL_DATA_DIR_PATH>:/root/.dcrd --name dcrd nandubatchu/dcrd:1.4.0
+```
