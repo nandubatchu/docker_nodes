@@ -17,6 +17,11 @@ Configuration file `bitcoin.conf` should be placed in the data directory before 
 ```
 docker run --rm -d -p 8332:8332 -p 8333:8333 -v <LOCAL_DATA_DIR_PATH>:/home/bitcoinsv/.bitcoinsv --name bitcoinsv nandubatchu/bitcoinsv:0.1.1
 ```
+### running bitcoind (bitcoin_gold)
+Configuration file `bitcoingold.conf` should be placed in the data directory before spinning up the container.
+```
+docker run --rm -d -p 8332:8332 -p 8333:8333 -v <LOCAL_DATA_DIR_PATH>:/home/bitcoingold/.bitcoingold --name bgoldd nandubatchu/bgoldd:0.15.2
+```
 
 ### running litecoind
 Configuration file `litecoin.conf` should be placed in the data directory before spinning up the container
@@ -66,4 +71,10 @@ docker run --rm -d -p 3888:3888 -p 3889:3889 -v <LOCAL_DATA_DIR_PATH>:/home/qtum
 Configuration file `dcrd.conf` should be placed in the data directory before spinning up the container
 ```
 docker run --rm -d -p 9108:9108 -p 9109:9109 -v <LOCAL_DATA_DIR_PATH>:/root/.dcrd --name dcrd nandubatchu/dcrd:1.4.0
+```
+
+### running dashd
+Configuration file `dash.conf` should be placed in the data directory before spinning up the container
+```
+docker run --rm -d -p 9998:9998 -p 9999:9999 -v <LOCAL_DATA_DIR_PATH>:/home/dashcore/.dashcore --name dashd nandubatchu/dashd:0.13.3.0
 ```
