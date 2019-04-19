@@ -17,6 +17,11 @@ Configuration file `bitcoin.conf` should be placed in the data directory before 
 ```
 docker run --rm -d -p 8332:8332 -p 8333:8333 -v <LOCAL_DATA_DIR_PATH>:/home/bitcoinsv/.bitcoinsv --name bitcoinsv nandubatchu/bitcoinsv:0.1.1
 ```
+### running bitcoind (bitcoin_gold)
+Configuration file `bitcoingold.conf` should be placed in the data directory before spinning up the container.
+```
+docker run --rm -d -p 8332:8332 -p 8333:8333 -v <LOCAL_DATA_DIR_PATH>:/home/bitcoingold/.bitcoingold --name bgoldd nandubatchu/bgoldd:0.15.2
+```
 
 ### running litecoind
 Configuration file `litecoin.conf` should be placed in the data directory before spinning up the container
