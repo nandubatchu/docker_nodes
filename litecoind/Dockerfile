@@ -18,7 +18,7 @@ ENV PATH=/opt/litecoin-${LITECOIN_VERSION}/bin:$PATH
 # Mount volume
 VOLUME ["/home/litecoin/.litecoin"]
 # Expose required ports (both testnet & mainnet)
-EXPOSE 9332 9333 19332 19333 19444
+EXPOSE 9332 9333 19332 19335 19444
 # Copy and define the entrypoint
 COPY docker-entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["sh", "/entrypoint.sh"]
