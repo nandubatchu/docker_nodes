@@ -73,6 +73,13 @@ Configuration file `dcrd.conf` should be placed in the data directory before spi
 docker run --rm -d -p 9108:9108 -p 9109:9109 -v <LOCAL_DATA_DIR_PATH>:/root/.dcrd --name dcrd nandubatchu/dcrd:1.4.0
 ```
 
+### running dcwallet
+Configuration file `dcrwallet.conf` should be placed in the data directory before spinning up the container
+* To connect to the dcrd instance, we need to place the rpc.cert file of dcrd instance inside the Data directory as dcrd.cert
+```
+docker run --rm -d -p 9110:9110 -v <LOCAL_DATA_DIR_PATH>:/root/.dcrwallet --name dcrwallet nandubatchu/dcrwallet:1.4.0
+```
+
 ### running dashd
 Configuration file `dash.conf` should be placed in the data directory before spinning up the container
 ```
