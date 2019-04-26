@@ -85,3 +85,9 @@ Configuration file `dash.conf` should be placed in the data directory before spi
 ```
 docker run --rm -d -p 9998:9998 -p 9999:9999 -v <LOCAL_DATA_DIR_PATH>:/home/dashcore/.dashcore --name dashd nandubatchu/dashd:0.13.3.0
 ```
+
+### running ravend
+Configuration file `raven.conf` should be placed in the data directory before spinning up the container
+```
+docker run --rm -d -p 8766:8766 -p 8767:8767 -v <LOCAL_DATA_DIR_PATH>:/home/raven/.raven --name ravend nandubatchu/ravend:2.2.2.0
+```
