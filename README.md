@@ -91,3 +91,10 @@ Configuration file `raven.conf` should be placed in the data directory before sp
 ```
 docker run --rm -d -p 8766:8766 -p 8767:8767 -v <LOCAL_DATA_DIR_PATH>:/home/raven/.raven --name ravend nandubatchu/ravend:2.2.2.0
 ```
+
+### running zelcashd
+Configuration file `zelcash.conf` should be placed in the data directory before spinning up the container
+* requires to change the directory ownership to user 999 (chown -R 999 <LOCAL_DATA_DIR_PATH>)
+```
+docker run --rm -d -p 16124:16124 -p 16125:16125 -v <LOCAL_DATA_DIR_PATH>:/home/zelcash/.zelcash --name zelcashd nandubatchu/zelcashd:3.3.0
+```
