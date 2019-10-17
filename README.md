@@ -58,7 +58,7 @@ docker run --rm -d -p 22555:22555 -p 22556:22556 -v <LOCAL_DATA_DIR_PATH>:/home/
 ### running zcashd
 Configuration file `zcash.conf` should be placed in the data directory before spinning up the container
 ```
-docker run --rm -d -p 8232:8232 -p 8233:8233 -v <LOCAL_DATA_DIR_PATH>:/home/zcash/.zcash --name zcashd nandubatchu/zcashd:2.0.6
+docker run --rm -d -p 8232:8232 -p 8233:8233 -v <LOCAL_DATA_DIR_PATH>:/home/zcash/.zcash --name zcashd nandubatchu/zcashd:2.0.7-3
 ```
 
 ### running qtumd
@@ -89,7 +89,7 @@ docker run --rm -d -p 9998:9998 -p 9999:9999 -v <LOCAL_DATA_DIR_PATH>:/home/dash
 ### running ravend
 Configuration file `raven.conf` should be placed in the data directory before spinning up the container
 ```
-docker run --rm -d -p 8766:8766 -p 8767:8767 -v <LOCAL_DATA_DIR_PATH>:/home/raven/.raven --name ravend nandubatchu/ravend:2.2.2.0
+docker run --rm -d -p 8766:8766 -p 8767:8767 -v <LOCAL_DATA_DIR_PATH>:/home/raven/.raven --name ravend nandubatchu/ravend:2.5.1.0
 ```
 
 ### running zelcashd
