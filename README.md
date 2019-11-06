@@ -26,7 +26,7 @@ docker run --rm -d -p 8332:8332 -p 8333:8333 -v <LOCAL_DATA_DIR_PATH>:/home/bitc
 ### running litecoind
 Configuration file `litecoin.conf` should be placed in the data directory before spinning up the container
 ```
-docker run --rm -d -p 9332:9332 -p 9333:9333 -v <LOCAL_DATA_DIR_PATH>:/home/litecoin/.litecoin --name litecoind nandubatchu/litecoind:0.16.3
+docker run --rm -d -p 9332:9332 -p 9333:9333 -v <LOCAL_DATA_DIR_PATH>:/home/litecoin/.litecoin --name litecoind nandubatchu/litecoind:0.17.1
 ```
 
 ### running parity
