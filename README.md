@@ -83,7 +83,7 @@ docker run --rm -d -p 9110:9110 -v <LOCAL_DATA_DIR_PATH>:/root/.dcrwallet --name
 ### running dashd
 Configuration file `dash.conf` should be placed in the data directory before spinning up the container
 ```
-docker run --rm -d -p 9998:9998 -p 9999:9999 -v <LOCAL_DATA_DIR_PATH>:/home/dashcore/.dashcore --name dashd nandubatchu/dashd:0.14.0.1
+docker run --rm -d -p 9998:9998 -p 9999:9999 -v <LOCAL_DATA_DIR_PATH>:/home/dashcore/.dashcore --name dashd nandubatchu/dashd:0.14.0.3
 ```
 
 ### running ravend
