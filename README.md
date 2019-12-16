@@ -40,7 +40,7 @@ docker run --rm -d -p 8545:8545 -p 30303:30303 -v <LOCAL_DATA_DIR_PATH>:/home/et
 Need to create a `monero-wallet-cli.conf` inside the data directory before spinning up the container.
 Also would need to generate the wallet files using the `monero-wallet-cli` and be placed in the `/wallet-dir` path under the data directory to be accessed by the RPC commands.
 ```
-docker run --rm -d -p 18088:18088 -v <LOCAL_DATA_DIR_PATH>:/home/monero/.bitmonero --name monero-waller-rpc nandubatchu/monero-wallet-rpc:0.14.1.0
+docker run --rm -d -p 18088:18088 -v <LOCAL_DATA_DIR_PATH>:/home/monero/.bitmonero --name monero-waller-rpc nandubatchu/monero-wallet-rpc:0.15.0.0
 ```
 
 ### running monerod
@@ -97,4 +97,10 @@ Configuration file `zelcash.conf` should be placed in the data directory before 
 * requires to change the directory ownership to user 999 (chown -R 999 <LOCAL_DATA_DIR_PATH>)
 ```
 docker run --rm -d -p 16124:16124 -p 16125:16125 -v <LOCAL_DATA_DIR_PATH>:/home/zelcash/.zelcash --name zelcashd nandubatchu/zelcashd:3.3.2
+```
+
+### running rskj
+Configuration file `node.conf` should be placed in the data directory before spinning up the container
+```
+docker run --rm -d -p 4444:4444 -p 5050:5050 -v <LOCAL_DATA_DIR_PATH>:/var/lib/rsk --name rskj nandubatchu/rskj:1.1.0
 ```
