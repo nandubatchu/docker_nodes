@@ -6,7 +6,7 @@ RUN  apt-get update \
   && apt-get install -y wget \
   && rm -rf /var/lib/apt/lists/*
 # Declare the environment variables (version, path, data-dir etc)
-ENV BITCOIN_SV_VERSION=0.2.1
+ENV BITCOIN_SV_VERSION=1.0.1
 ENV BITCOIN_SV_DATA=/home/bitcoinsv/.bitcoinsv
 # Get the compiled binaries and extract them
 RUN wget https://download.bitcoinsv.io/bitcoinsv/${BITCOIN_SV_VERSION}/bitcoin-sv-${BITCOIN_SV_VERSION}-x86_64-linux-gnu.tar.gz
