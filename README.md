@@ -102,5 +102,5 @@ docker run --rm -d -p 16124:16124 -p 16125:16125 -v <LOCAL_DATA_DIR_PATH>:/home/
 ### running rskj
 Configuration file `node.conf` should be placed in the data directory before spinning up the container
 ```
-docker run --rm -d -p 4444:4444 -p 5050:5050 -v <LOCAL_DATA_DIR_PATH>:/var/lib/rsk --name rskj nandubatchu/rskj:1.1.0
+docker run --rm -d -p 4444:4444 -p 5050:5050 -v <LOCAL_DATA_DIR_PATH>:/var/lib/rsk --name rskj nandubatchu/rskj:1.3.0
 ```
