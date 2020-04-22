@@ -89,7 +89,7 @@ docker run --rm -d -p 9998:9998 -p 9999:9999 -v <LOCAL_DATA_DIR_PATH>:/home/dash
 ### running ravend
 Configuration file `raven.conf` should be placed in the data directory before spinning up the container
 ```
-docker run --rm -d -p 8766:8766 -p 8767:8767 -v <LOCAL_DATA_DIR_PATH>:/home/raven/.raven --name ravend nandubatchu/ravend:3.3.2.0
+docker run --rm -d -p 8766:8766 -p 8767:8767 -v <LOCAL_DATA_DIR_PATH>:/home/raven/.raven --name ravend nandubatchu/ravend:4.1.0.0
 ```
 
 ### running zelcashd
