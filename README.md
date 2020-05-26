@@ -9,7 +9,7 @@ docker run --rm -d -p 8332:8332 -p 8333:8333 -v <LOCAL_DATA_DIR_PATH>:/home/bitc
 ### running bitcoind (bitcoin_abc)
 Configuration file `bitcoin.conf` should be placed in the data directory before spinning up the container.
 ```
-docker run --rm -d -p 8332:8332 -p 8333:8333 -v <LOCAL_DATA_DIR_PATH>:/home/bitcoinabc/.bitcoinabc --name bitcoinabc nandubatchu/bitcoinabc:0.20.5
+docker run --rm -d -p 8332:8332 -p 8333:8333 -v <LOCAL_DATA_DIR_PATH>:/home/bitcoinabc/.bitcoinabc --name bitcoinabc nandubatchu/bitcoinabc:0.21.7
 ```
 
 ### running bitcoind (bitcoin_sv)
