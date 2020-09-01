@@ -64,7 +64,7 @@ docker run --rm -d -p 8232:8232 -p 8233:8233 -v <LOCAL_DATA_DIR_PATH>:/home/zcas
 ### running qtumd
 Configuration file `qtum.conf` should be placed in the data directory before spinning up the container
 ```
-docker run --rm -d -p 3888:3888 -p 3889:3889 -v <LOCAL_DATA_DIR_PATH>:/home/qtum/.qtum --name qtumd nandubatchu/qtumd:0.18.1
+docker run --rm -d -p 3888:3888 -p 3889:3889 -v <LOCAL_DATA_DIR_PATH>:/home/qtum/.qtum --name qtumd nandubatchu/qtumd:0.19.1
 ```
 
 ### running dcrd
