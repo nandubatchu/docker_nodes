@@ -104,3 +104,9 @@ Configuration file `node.conf` should be placed in the data directory before spi
 ```
 docker run --rm -d -p 4444:4444 -p 5050:5050 -v <LOCAL_DATA_DIR_PATH>:/var/lib/rsk --name rskj nandubatchu/rskj:2.0.1
 ```
+
+### running digibyted
+Configuration file `digibyte.conf` should be placed in the data directory before spinning up the container.
+```
+docker run --rm -d -p 12024:12024 -p 14022:14022 -v <LOCAL_DATA_DIR_PATH>:/home/digibyte/.digibyte --name digibyted nandubatchu/digibyted:7.17.2
+```
