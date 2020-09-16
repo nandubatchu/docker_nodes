@@ -58,7 +58,7 @@ docker run --rm -d -p 22555:22555 -p 22556:22556 -v <LOCAL_DATA_DIR_PATH>:/home/
 ### running zcashd
 Configuration file `zcash.conf` should be placed in the data directory before spinning up the container
 ```
-docker run --rm -d -p 8232:8232 -p 8233:8233 -v <LOCAL_DATA_DIR_PATH>:/home/zcash/.zcash --name zcashd nandubatchu/zcashd:3.0.0
+docker run --rm -d -p 8232:8232 -p 8233:8233 -v <LOCAL_DATA_DIR_PATH>:/home/zcash/.zcash --name zcashd nandubatchu/zcashd:4.0.0
 ```
 
 ### running qtumd
