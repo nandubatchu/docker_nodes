@@ -46,13 +46,13 @@ docker run --rm -d -p 8545:8545 -p 30303:30303 -v <LOCAL_DATA_DIR_PATH>:/home/et
 Need to create a `monero-wallet-cli.conf` inside the data directory before spinning up the container.
 Also would need to generate the wallet files using the `monero-wallet-cli` and be placed in the `/wallet-dir` path under the data directory to be accessed by the RPC commands.
 ```
-docker run --rm -d -p 18088:18088 -v <LOCAL_DATA_DIR_PATH>:/home/monero/.bitmonero --name monero-waller-rpc nandubatchu/monero-wallet-rpc:0.17.1.1
+docker run --rm -d -p 18088:18088 -v <LOCAL_DATA_DIR_PATH>:/home/monero/.bitmonero --name monero-waller-rpc nandubatchu/monero-wallet-rpc:0.17.1.7
 ```
 
 ### running monerod
 Need to create a `monerod.conf` inside the data directory before spinning up the container.
 ```
-docker run --rm -d -p 18080:18080 -p 18081:18081 -v <LOCAL_DATA_DIR_PATH>:/home/monero/.bitmonero --name monerod nandubatchu/monerod:0.17.1.1
+docker run --rm -d -p 18080:18080 -p 18081:18081 -v <LOCAL_DATA_DIR_PATH>:/home/monero/.bitmonero --name monerod nandubatchu/monerod:0.17.1.7
 ```
 
 ### running dogecoind
