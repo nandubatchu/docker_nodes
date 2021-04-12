@@ -10,7 +10,7 @@ ENV ZELCASH_VERSION=5.0.0
 ENV ZELCASH_DATA=/home/zelcash/.zelcash
 # Get the compiled binaries and extract them
 RUN ZELCASH_VERSION_SHORT=
-RUN wget https://github.com/zelcash/zelcash/releases/download/v${ZELCASH_VERSION}/Zel-amd64-$(echo $ZELCASH_VERSION | tr -d .).tar.gz
+RUN wget https://github.com/zelcash/zelcash/releases/download/v${ZELCASH_VERSION}/Zel-amd64-${ZELCASH_VERSION}.tar.gz
 # # Verify the checksum of the tarball
 # RUN sha256sum zelcash-${ZELCASH_VERSION}-linux64.tar.gz
 RUN mkdir -p /opt/zelcash/bin
