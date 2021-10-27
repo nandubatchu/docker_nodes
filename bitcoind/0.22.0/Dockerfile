@@ -6,10 +6,10 @@ RUN  apt-get update \
   && apt-get install -y wget \
   && rm -rf /var/lib/apt/lists/*
 # Declare the environment variables (version, path, data-dir etc)
-ENV BITCOIN_VERSION=0.22.0
+ENV BITCOIN_VERSION=22.0
 ENV BITCOIN_DATA=/home/bitcoin/.bitcoin
 # Get the compiled binaries and extract them
-RUN wget https://bitcoin.org/bin/bitcoin-core-${BITCOIN_VERSION}/bitcoin-${BITCOIN_VERSION}-x86_64-linux-gnu.tar.gz
+RUN wget https://bitcoincore.org/bin/bitcoin-core-${BITCOIN_VERSION}/bitcoin-${BITCOIN_VERSION}-x86_64-linux-gnu.tar.gz 
 RUN tar -xzf *.tar.gz -C /opt
 # Cleanup the workspace
 RUN rm *.tar.gz
